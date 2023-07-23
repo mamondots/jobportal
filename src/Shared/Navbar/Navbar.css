@@ -1,0 +1,7 @@
+.nav li a{
+    text-decoration:none;
+    transition:0.5s;
+}
+.nav li a:hover{
+    color:#23C0E9;
+}
