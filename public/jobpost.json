@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Web Development",
+        "amount": 1000
+    },
+    {
+        "title": "Web Designer",
+        "amount": 800
+    },
+    {
+        "title": "Graphic Designer",
+        "amount": 1000
+    },
+    {
+        "title": "Project Management",
+        "amount": 1560
+    },
+    {
+        "title": "Education & Training",
+        "amount": 750
+    },
+    {
+        "title": "Customer Service",
+        "amount": 4000
+    },
+    {
+        "title": "Software Development",
+        "amount": 2600
+    },
+    {
+        "title": "Finance Management",
+        "amount": 600
+    }
+]
