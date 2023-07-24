@@ -1,0 +1,21 @@
+.condi-box{
+    position: relative;
+    transition:0.5s;
+    cursor: pointer;
+}
+.condi-box .boxhid{
+    opacity:0;
+    transition:0.8s;
+    
+}
+.condi-box:hover .boxhid{
+    opacity:1;
+    
+}
+.condi-box .condi-btn{
+    transform:translateY(-40px);
+    transition:0.5s;
+}
+.condi-box:hover .condi-btn{
+    transform:translateY(0px);
+}

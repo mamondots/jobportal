@@ -8,7 +8,7 @@ const Jobs = () => {
         .then(res => res.json())
         .then(data =>{
             setJobs(data)
-            console.log(data)
+            
         })
     },[])
     return (
