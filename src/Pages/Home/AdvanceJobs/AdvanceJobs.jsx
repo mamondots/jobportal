@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const AdvanceJobs = () => {
@@ -17,7 +18,7 @@ const AdvanceJobs = () => {
 
             <div className="grid lg:grid-cols-2 gap-4 py-8">
                  {
-                    jobs.map((job,index) =><div key={index}>
+                    jobs.slice(0,6).map((job,index) =><div key={index}>
 
                         <div className="border cursor-pointer flex lg:px-4 px-2 py-6 bg-[#fff] items-center hover:border-[#f691918e] duration-500 relative">
                             <div>
@@ -32,7 +33,9 @@ const AdvanceJobs = () => {
                                 
                             </div>
                             <div className="absolute right-6 hidden lg:block md:block sm:block">
+                                <Link to='/detailsjob'>
                                 <button className="px-4 py-2 bg-[#F36969] text-base text-white font-medium rounded hover:bg-[#f41b1b] duration-300">APPLY NOW</button>
+                                </Link>
                             </div>
                         </div>
                         
@@ -41,7 +44,9 @@ const AdvanceJobs = () => {
                  
             </div>
             <div className="flex items-center justify-center">
+            <Link to='/alljob'>
                       <button className="px-8 py-3 bg-[#F36969] font-medium text-white  rounded hover:bg-[#f41b1b] duration-300">SEE ALL JOBS</button>
+                      </Link>
                  </div>
         </div>
     );

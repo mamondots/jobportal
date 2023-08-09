@@ -9,6 +9,8 @@ import Profile from "../Pages/Profile/Profile";
 import Contact from "../Pages/Contact/Contact";
 import SingIn from "../Form/SingIn/SingIn";
 import SingUp from "../Form/SingUp/SingUp";
+import DetailsJob from "../DetailsJob/DetailsJob";
+import DetailsBlog from "../DetailsBlog/DetailsBlog";
   
 export  const router = createBrowserRouter([
     {
@@ -20,11 +22,11 @@ export  const router = createBrowserRouter([
             element:<Home></Home>
         },
         {
-          path:'/about',
+          path:'/alljob',
           element:<About></About>
         },
         {
-          path:'/question',
+          path:'/allblogs',
           element:<Question></Question>
         },
         {
@@ -42,6 +44,14 @@ export  const router = createBrowserRouter([
         {
           path:'/singup',
           element:<SingUp></SingUp>
+        },
+        {
+          path:'/detailsjob',
+          element:<DetailsJob></DetailsJob>
+        },
+        {
+          path:'/detailsblog',
+          element:<DetailsBlog></DetailsBlog>
         }
 
       ]

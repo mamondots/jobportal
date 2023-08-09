@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './BestOffer.css'
+import { Link } from 'react-router-dom';
 const BestOffer = () => {
     const [offers, setOffers] = useState([])
     useEffect(() =>{
@@ -22,6 +23,7 @@ const BestOffer = () => {
                 {
                     offers.map((offer,index) =><div key={index}>
 
+                            <Link>
                             <div className='flex  space-x-4 box border px-8 py-4 cursor-pointer'>
                                 <div>
                                 <img className='w-[120%] offImg' src={offer.image_url} alt="" />
@@ -31,6 +33,7 @@ const BestOffer = () => {
                                     <p className='py-2'>{offer.description}</p>
                                 </div>
                             </div>
+                            </Link>
 
                     </div>)
                 }

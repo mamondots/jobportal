@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([])
@@ -18,6 +19,7 @@ const Blogs = () => {
                     {
                         blogs.slice(0, 3).map((blog, index) => <div key={index}>
 
+                        <Link to ='/detailsblog'>
                         <div className="group cursor-pointer">
                                 <div className="overflow-hidden">
                                     <img className="mt-5 group-hover:scale-105 duration-500" src={blog.image} alt="" />
@@ -40,6 +42,7 @@ const Blogs = () => {
                                 </div>
                                 </div>
                         </div>
+                        </Link>
 
                         </div>)
                     }

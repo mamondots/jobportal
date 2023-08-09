@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const JobPost = () => {
@@ -31,10 +32,12 @@ const JobPost = () => {
                         postes.map((post,index) =><div key={index}>
 
 
+                        <Link to='/alljob'>
                         <div className="flex items-center justify-between border border-[#23c1e931] px-4 py-2 font-medium hover:bg-[#a6e7f731] duration-300 cursor-pointer hover:text-[#23C0E9]">
                             <h2>{post.title}</h2>
                             <p className=''>{post.amount}</p>
                         </div>
+                        </Link>
 
                         </div>)
                      }
